@@ -17,7 +17,7 @@ public class Q1 {
             
            fout.write(' ');
             FileInputStream fin = new FileInputStream(f);
-            s = "C:/Users/user/Desktop/Assignment/File_Handling/data1.txt";
+            //s = "C:/Users/user/Desktop/Assignment/File_Handling/data1.txt";
             int i;
             
             i=fin.read();
