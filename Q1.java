@@ -7,7 +7,7 @@ public class Q1 {
         try
         {
            FileOutputStream fout = new FileOutputStream(f);
-            String s = "C:/Users/user/Desktop/Assignment/File_Handling/data.txt";
+            String s = "C:/Users/user/Desktop/Assignment/File_Handling/data1.txt";
             
             char ch[] = s.toCharArray();
            for(int i=0;i<s.length();i++)
@@ -20,6 +20,7 @@ public class Q1 {
             //s = "C:/Users/user/Desktop/Assignment/File_Handling/data1.txt";
             int i;
             
+            System.out.println("Content Inside File : ");
             i=fin.read();
             
             while(i!=-1)
@@ -27,7 +28,8 @@ public class Q1 {
                 System.out.print((char)i);
                 i=fin.read();
             }
-             
+            System.out.println();
+            System.out.println("Path of file : "+f.getAbsolutePath());
             fin.close();
         }
         catch(IOException e)
